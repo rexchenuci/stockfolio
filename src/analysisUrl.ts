@@ -1,4 +1,4 @@
-import { deflateRawSync } from "node:zlib";
+import { deflateSync } from "node:zlib";
 
 // ── Types ───────────────────────────────────────────────────────────
 export interface AnalysisPageData {
@@ -79,7 +79,7 @@ function compact(d: AnalysisPageData): Record<string, unknown> {
 
 function encode(data: Record<string, unknown>): string {
   const json = JSON.stringify(data);
-  const compressed = deflateRawSync(Buffer.from(json));
+  const compressed = deflateSync(Buffer.from(json));
   return compressed.toString("base64url");
 }
 
