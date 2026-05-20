@@ -27,9 +27,6 @@ on:
         type: string
 
 jobs:
-     env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
   send-brief:
     runs-on: ubuntu-latest
 
