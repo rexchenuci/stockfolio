@@ -1,7 +1,7 @@
 {
   "name": "richfolio",
   "version": "1.5.0",
-  "description": "A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once, get a daily briefing with allocation gaps, buy signals, and relevant news — all sent via email and Telegram from GitHub Actions. No server, no dashboard.",
+  "description": "A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once, get a daily briefing with allocation gaps, buy signals, and relevant news [...]",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furic/richfolio.git"
+    "url": "git+https://github.com/rexchenuci/stockfolio.git"
   },
   "keywords": [
     "portfolio",
@@ -33,12 +33,12 @@
     "telegram",
     "github-actions"
   ],
-  "author": "furic",
+  "author": "rexchenuci",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/furic/richfolio/issues"
+    "url": "https://github.com/rexchenuci/stockfolio/issues"
   },
-  "homepage": "https://github.com/furic/richfolio#readme",
+  "homepage": "https://github.com/rexchenuci/stockfolio#readme",
   "dependencies": {
     "@google/genai": "^1.42.0",
     "dotenv": "^17.3.1",
