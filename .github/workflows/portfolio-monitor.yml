@@ -31,9 +31,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.1.7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4.1.0
         with:
           node-version: 22
           cache: npm
@@ -46,7 +46,7 @@ jobs:
           CONFIG_JSON: ${{ vars.CONFIG_JSON }}
 
       # Restore intraday state cache (morning baseline for comparison)
-      - uses: actions/cache@v4
+      - uses: actions/cache@v4.0.2
         with:
           path: state/
           key: intraday-state-${{ github.run_id }}
