@@ -1,7 +1,7 @@
 {
   "name": "richfolio",
   "version": "1.5.0",
-  "description": "A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once, get a daily briefing with allocation gaps, buy signals, and relevant news — automatically via GitHub Actions.",
+  "description": "A zero-maintenance morning email digest for your investment portfolio. Set your target allocations once, get a daily briefing with allocation gaps, buy signals, and relevant news — all sent via email and Telegram from GitHub Actions. No server, no dashboard.",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "prettier": "^3.3.3",
-    "tsx": "^4.21.0",
+    "tsx": "^4.22.0",
     "typescript": "^5.9.3"
   }
 }
