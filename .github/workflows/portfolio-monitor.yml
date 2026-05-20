@@ -31,9 +31,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4.1.0
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
@@ -49,9 +49,8 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: state/
-          key: intraday-state-${{ github.run_id }}
-          restore-keys: |
-            intraday-state-
+          key: intraday-state-${{ github.run_number }}-${{ github.sha }}
+          restore-keys: intraday-state-
 
       # Determine run mode from schedule or manual input
       - name: Determine mode
